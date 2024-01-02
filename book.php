@@ -76,7 +76,7 @@ table,th,td{
 
 			$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 
-			$sql="SELECT m.mov_name,t.t_name,t.location,s.time,b.no_of_seats from movie m,theater t,shows s,booking b where m.mov_id=s.mov_id and t.t_id=s.t_id and s.show_id=b.show_id and b.show_id='".$_SESSION['show_id']."'  and b.no_of_seats='".$_SESSION['seats']."' order by booking_id desc limit 1";
+			$sql="SELECT m.mov_name,t.t_name,t.location,s.time,b.no_of_seats,s.price from movie m,theater t,shows s,booking b where m.mov_id=s.mov_id and t.t_id=s.t_id and s.show_id=b.show_id and b.show_id='".$_SESSION['show_id']."'  and b.no_of_seats='".$_SESSION['seats']."' order by booking_id desc limit 1";
 
 			mysqli_query($conn, $sql) or die('Error');
 			$result = mysqli_query($conn, $sql);
@@ -106,6 +106,10 @@ table,th,td{
 										<td><u><b>Seats</b> </u></td>
 										<td>'.$row['no_of_seats'].'</td>
 									</tr>
+									<tr>
+										<td><u><b>Price</b> </u></td>
+										<td>'.$row['price']*$row['no_of_seats'].'</td>
+									</tr>
 							</table><br><br><br>';
 				}
 
@@ -133,12 +137,13 @@ table,th,td{
 		else
 		{
 			header('location: second.php');
-		}
-		
-		
-		
+		}		
 	?>
-	
+		<div style="text-align: center;">
+		<p style="font-size: 18px; margin-bottom: 20px;">PAYMENT INSTRUCTIONS</p>
+    	<p style="font-size: 18px; margin-bottom: 20px;">Please pay money via this QR code with your username included in the transaction details</p>
+    	<img style="max-width: 25%; height: auto;" src="images/QRCode.jpg" alt="QR Code">
+  </div>
 </body>
 <?php
 	include_once 'footer.php';
