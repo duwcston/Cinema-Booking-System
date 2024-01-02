@@ -57,17 +57,9 @@ include_once 'header.php';
 		<h1>      </h1>
 		<div class="container">
 	<div class="poster">
-	  <img src="images/139452.jpg" >
+	  <img src="images/139452.png" >
 	</div>
-	<div class="info">
-	  <p><b>Description:</b> Rudger is Amanda Shuffleup's imaginary friend. Nobody else can see Rudger—until the evil Mr. Bunting arrives at Amanda's door. Mr. Bunting hunts imaginaries. Rumor has it that he even eats them. And now he's found Rudger. Soon Rudger is alone, and running for his imaginary life. He needs to find Amanda before Mr. Bunting catches him—and before Amanda forgets him and he fades away to nothing. But how can an unreal boy stand alone in the real world?</p>
-	  <p><b>Language:</b> Japanese with English Sub</p>
-	  <p><b>Genre:</b> Fantasy</p>
-	  <p><b>Director:</b> Momose Yoshiyuki</p>
-	  <p><b>Rating:</b> E - Everyone</p>
-	  <p><b>Release Date:</b> 15/12/2023</p>
-	  <p><b>Trailer:</b> <a href="https://www.youtube.com/watch?v=iQ9jeWmPsvc" class="trailer-link">Watch Now</a></p>	  
-	</div>
+	
     </div>
 		</p>
 		

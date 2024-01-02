@@ -59,15 +59,6 @@ include_once 'header.php';
 	<div class="poster">
 	  <img src="images/Rascal.jpg" >
 	</div>
-	<div class="info">
-	  <p><b>Description:</b> Finally, the day of Mai's high school graduation has arrived. While Sakuta eagerly waits for his girlfriend, an elementary schooler who looks exactly like her appears before him. Suspicious, and for all the wrong reasons... Meanwhile, Sakuta and Kaede's father suddenly calls, saying that their mother wants to see her daughter. She was hospitalized because Kaede's condition had been too much for her to bear, so what could she possibly want now?</p>
-	  <p><b>Language:</b> Japanese with English Sub</p>
-	  <p><b>Genre:</b> Drama, Romance, Supernatural</p>
-	  <p><b>Director:</b> Yūichirō Kurokawa</p>
-	  <p><b>Rating:</b> PG-13 - Teens 13 or older</p>
-	  <p><b>Release Date:</b> 1/12/2023</p>
-	  <p><b>Trailer:</b> <a href="https://www.youtube.com/watch?v=dNxfHUwQRt8" class="trailer-link">Watch Now</a></p>	  
-	</div>
     </div>
 		</p>
 		
