@@ -13,7 +13,7 @@
 			background-color: black;
 		}
 		body{
-				background-image: url("book.jpg");
+				background-image: url("images/book.jpg");
 				-moz-background-size: cover;
 				-webkit-background-size: cover;
 				background-size: cover;
@@ -50,7 +50,7 @@
 		
 		$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 				
-		$sql= "SELECT m.mov_name,t.t_name,t.location,s.time,b.no_of_seats,b.booking_time from movie m,theater t,shows s,booking b,users u where m.mov_id=s.mov_id and t.t_id=s.t_id and s.show_id=b.show_id  and b.user_id=u.id and u.id='".$_SESSION['u_id']."' ";
+		$sql= "SELECT m.mov_name,t.t_name,t.location,s.time,b.no_of_seats,b.booking_time,b.paid from movie m,theater t,shows s,booking b,users u where m.mov_id=s.mov_id and t.t_id=s.t_id and s.show_id=b.show_id  and b.user_id=u.id and u.id='".$_SESSION['u_id']."' ";
 
 		mysqli_query($conn, $sql) or die('Error booking_display');
 		$result = mysqli_query($conn, $sql);
@@ -91,6 +91,10 @@
 									<tr>
 										<td><u>Booking Made </u></td>
 										<td>'.$row['booking_time'].'</td>
+									</tr>
+									<tr>
+										<td><u>Payment status </u></td>
+										<td>'.$row['paid'].'</td>
 									</tr>
 									</table><br><br><br>';
 			}
